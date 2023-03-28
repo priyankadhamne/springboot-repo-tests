@@ -1,0 +1,8 @@
+site_name: springboot-repo-tests
+site_description: 
+
+plugins:
+  - techdocs-core
+
+nav:
+    - Introduction: 'index.md'

@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: springboot-repo-tests
+  description: 
+  tags:
+    - karate-tests
+  labels:
+    templateVersion: springboot-cookiecutter-v1
+    hostedOn: jenkins
+  links:
+    - url: https://github.com/priyankadhamne/springboot-repo-tests
+      title: GitHub Repo
+  annotations:
+    git.schneider.com/project-slug: priyankadhamne/springboot-repo-tests
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: springboot-repo-tests
+    backstage.io/kubernetes-label-selector: name=springboot-repo-tests
+spec:
+  type: karate
+  lifecycle: experimental
+  owner: 
+  system: staff-test
